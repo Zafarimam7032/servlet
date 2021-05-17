@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+
+
+	<servlet>
+		<servlet-name>abc</servlet-name>
+		<servlet-class>com.grwt.db.sercon.zafar.ServletContextDbCon</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>abc</servlet-name>
+		<url-pattern>/abc</url-pattern>
+	</servlet-mapping>
+	<context-param>
+		<param-name>dbname</param-name>
+		<param-value>greattug_gw_pratice_CD</param-value>
+	</context-param>
+	<context-param>
+		<param-name>userName</param-name>
+		<param-value>greattug_pratice</param-value>
+	</context-param>
+	<context-param>
+		<param-name>password</param-name>
+		<param-value>Test1234##</param-value>
+	</context-param>
+	<context-param>
+		<param-name>port</param-name>
+		<param-value>3306</param-value>
+	</context-param>
+	<context-param>
+		<param-name>ip</param-name>
+		<param-value>103.50.160.116</param-value>
+	</context-param>
+	<servlet>
+		<servlet-name>url</servlet-name>
+		<servlet-class>com.grwt.dbopr.zafar.SelectDbOpr</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>url</servlet-name>
+		<url-pattern>/url</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>http</servlet-name>
+		<servlet-class>com.grwt.dbopr.zafar.InseartDataInDb</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>http</servlet-name>
+		<url-pattern>/std</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>https</servlet-name>
+		<servlet-class>com.grwt.dbopr.zafar.DeleteDb</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>https</servlet-name>
+		<url-pattern>/dltd</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>dtd</servlet-name>
+		<servlet-class>com.grwt.dbopr.zafar.UpdateName</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dtd</servlet-name>
+		<url-pattern>/upt</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>prpe</servlet-name>
+		<servlet-class>com.grwt.prstm.insrt.zafar.PreapareStmDb</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>prpe</servlet-name>
+		<url-pattern>/stdp</url-pattern>
+	</servlet-mapping>
+</web-app>

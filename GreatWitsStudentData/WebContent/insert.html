@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="insert.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<style>
+body{
+    background-image: url(../assets/bodyBackground.JPG);
+}
+.takedataFormContainer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.705);
+    position: fixed;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+
+}
+.takeDataForm{
+    background-color: white;
+    padding: 30px;
+    position: fixed;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    box-shadow: black 9px 15px 24px;
+}
+ul{
+    padding: 10px;
+    list-style-type: none;
+}
+li{
+    font-size: 20px;
+}
+p{
+    font-size: 20px;
+    color: rgb(252, 153, 5);
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    width: 300px;
+    outline: none;
+}
+button{
+    width: 100%;
+    background-color: rgb(112, 190, 34);
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 25px;
+    outline: none;
+    transition-duration: 1s;
+    color: rgb(5, 3, 0);
+    font-weight: 600;
+    font-family:   sans-serif;
+}
+button:hover{
+    background: darkgreen;
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 25px;
+    outline: none;
+    color: rgb(248, 247, 245);
+    font-weight: 600;
+    box-shadow: 3px 4px 10px rgb(1, 41, 1);
+}
+</style>
+<body>
+    <div class="takedataFormContainer">
+        <div class="takeDataForm">
+            <form action="std" method="post">
+                <p>Please enter your details...</p>
+                <ul>
+                    <li><label for="SName">Student name</label></li>
+                    <li><input type="text" name="SName" id="firstName"></li> 
+                
+                    <li><label for="City">City</label></li>
+                    <li><input type="text" name="city" id="lastName"></li>
+                    <li><label for="phone">Phone </label></li>
+                    <li><input type="text" name="phone" id="phone"></li>
+                	 <li><label for="email">Email</label></li>
+                    <li><input type="text" name="email" id="email"></li>
+                     <li><label for="address">Department</label></li>
+                    <li><input type="text" name="department" id="address"></li>
+                    <li><button type="submit">INSERT <i class="fas fa-check-double"></i></button></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

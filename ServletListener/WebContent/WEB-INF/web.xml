@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app> xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ServletListener</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  <servlet-name>listener</servlet-name>
+  <servlet-class>com.grwt.Listner.zafar.ServletListener</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>listener</servlet-name>
+  <url-pattern>/listener</url-pattern>
+  </servlet-mapping>
+ <servlet>
+<servlet-name>url</servlet-name> 
+<servlet-class>com.grwt.Listner.session.zafar.SessionListner</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>url</servlet-name>
+ <url-pattern>/session</url-pattern>
+ </servlet-mapping>
+  <servlet>
+<servlet-name>zafar</servlet-name> 
+<servlet-class>com.grwt.Listner.session.zafar.SessionTakeValue</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>zafar</servlet-name>
+ <url-pattern>/next</url-pattern>
+ </servlet-mapping>
+ <listener>
+ <listener-class>com.grwt.Listner.session.zafar.SessionListnerClass</listener-class>
+ </listener>
+ <listener>
+ <listener-class>com.grwt.Listner.zafar.ListenerImp</listener-class>
+ </listener>
+ <servlet>
+ <servlet-name>imam</servlet-name>
+ <servlet-class>com.grwt.Listner.context.zafar.ServletContext</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>imam</servlet-name>
+ <url-pattern>/imam</url-pattern>
+ </servlet-mapping>
+<context-param>
+<param-name>name</param-name>
+<param-value>Zafar Imam</param-value>
+</context-param>
+<!-- <listener>
+<listener-class>com.grwt.Listner.context.zafar.ContextServletListner</listener-class>
+</listener>
+  -->
+</web-app>

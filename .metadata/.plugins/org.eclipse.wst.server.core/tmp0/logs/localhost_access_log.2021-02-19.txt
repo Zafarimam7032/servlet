@@ -1,0 +1,15 @@
+127.0.0.1 - - [19/Feb/2021:14:57:19 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [19/Feb/2021:14:57:25 +0530] "GET /GreatWitsStudentData/insert.html HTTP/1.1" 200 2906
+0:0:0:0:0:0:0:1 - - [19/Feb/2021:14:57:25 +0530] "GET /GreatWitsStudentData/insert.css HTTP/1.1" 404 786
+0:0:0:0:0:0:0:1 - - [19/Feb/2021:14:57:25 +0530] "GET /assets/bodyBackground.JPG HTTP/1.1" 404 780
+0:0:0:0:0:0:0:1 - - [19/Feb/2021:14:57:27 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [19/Feb/2021:14:58:26 +0530] "POST /GreatWitsStudentData/std HTTP/1.1" 200 790
+0:0:0:0:0:0:0:1 - - [19/Feb/2021:14:58:41 +0530] "GET /GreatWitsStudentData/StdDataDisplay.jsp HTTP/1.1" 200 443
+0:0:0:0:0:0:0:1 - - [19/Feb/2021:15:03:27 +0530] "GET /GreatWitsStudentData/abc? HTTP/1.1" 200 2906
+0:0:0:0:0:0:0:1 - - [19/Feb/2021:15:03:27 +0530] "GET /GreatWitsStudentData/insert.css HTTP/1.1" 404 786
+0:0:0:0:0:0:0:1 - - [19/Feb/2021:15:03:27 +0530] "GET /assets/bodyBackground.JPG HTTP/1.1" 404 780
+0:0:0:0:0:0:0:1 - - [19/Feb/2021:15:03:35 +0530] "POST /GreatWitsStudentData/std HTTP/1.1" 200 790
+0:0:0:0:0:0:0:1 - - [19/Feb/2021:15:03:37 +0530] "GET /GreatWitsStudentData/StdDataDisplay.jsp HTTP/1.1" 200 554
+0:0:0:0:0:0:0:1 - - [19/Feb/2021:15:03:47 +0530] "GET /GreatWitsStudentData/insert.css HTTP/1.1" 404 786
+0:0:0:0:0:0:0:1 - - [19/Feb/2021:15:03:47 +0530] "GET /assets/bodyBackground.JPG HTTP/1.1" 404 780
+0:0:0:0:0:0:0:1 - - [19/Feb/2021:15:03:58 +0530] "POST /GreatWitsStudentData/std HTTP/1.1" 200 790

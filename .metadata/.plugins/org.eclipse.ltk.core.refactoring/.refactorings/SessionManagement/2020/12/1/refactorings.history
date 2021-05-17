@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;TextFile.jsp&apos; to &apos;Login&apos;" description="Move &apos;TextFile.jsp&apos; to &apos;Login&apos;" destination="WebContent/Login" element1="WebContent/TextFile.jsp" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1609221713419" updateReferences="true"/>
+</session>

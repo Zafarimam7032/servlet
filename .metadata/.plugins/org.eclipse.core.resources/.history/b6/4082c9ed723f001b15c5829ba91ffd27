@@ -1,0 +1,51 @@
+package com.grwt.html.db.zafar;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet("/InseartDataThrowHtml")
+public class InsertDataThrowHtml extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	protected  void dataBaseConnection()
+	{
+		final  String db_name= "greattug_gw_pratice_CD";
+		final  String db_username="greattug_pratice";
+		final  String db_password="Test1234##";
+		final  String db_port="3306";
+		final  String db_ip= "103.50.160.116";
+		final String dp_url="jdbc:mysql://"+db_ip+":"+db_port+"/"+db_name;
+		final String jdbc_driver="com.mysql.cj.jdbc.Driver";
+		try {
+			Class.forName(jdbc_driver);
+			Connection con=DriverManager.getConnection(dp_url, db_username, db_password);
+			if(con!=null)
+			{
+				System.out.println("zafar ");
+			}
+		}
+		catch(Exception e)
+		{
+			
+		}
+
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		PrintWriter pw=response.getWriter();
+		pw.println("zafar imam");
+		
+	}
+	
+	
+
+}

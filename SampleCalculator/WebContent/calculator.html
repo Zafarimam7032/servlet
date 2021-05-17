@@ -1,0 +1,101 @@
+
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<link rel="stylesheet" href="login.css"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+
+	<title>Login Page created by zafar</title> 
+	<style>
+		body { 
+		margin: 0px; 
+		padding: 0px; 
+		font-family: sans-serif; 
+		background: url() no-repeat; 
+    background-size: cover; 
+    background: white;
+	} 
+
+	.login-box { 
+		width: 300px; 
+		position:absolute; 
+		top: 30%; 
+		left: 50%; 
+		transform: translate(-50%, -50%); 
+		color:green; 
+	} 
+
+	.login-box h1 { 
+		float:left; 
+		font-size: 40px; 
+		border-bottom: 4px solid grey; 
+		margin-bottom:30px; 
+		padding: 10px; 
+	} 
+
+	.textbox { 
+		width: 100%; 
+		overflow: hidden; 
+		font-size: 25px; 
+		padding: 10px 0; 
+		margin: 10px 0; 
+		border-bottom: 2px solid #191970; 
+	} 
+
+	.fa { 
+		width: px; 
+		float: left; 
+		text-align: center; 
+	} 
+
+	.textbox input { 
+		border: none; 
+		outline:none; 
+		background:none; 
+
+		font-size: 20px; 
+		float:left; 
+		margin: 0 10px; 
+	} 
+
+	.button { 
+		width: 100%; 
+		padding: 8px; 
+		color: white; 
+		background-color: #cf2323; 
+		border: none; 
+		border-radius: 10px; 
+		font-size: 20px; 
+		cursor:pointer; 
+		margin: 12px 0; 
+	} 
+	</style>
+</head> 
+
+<body> 
+	<form method = "post" action="add"" > 
+		<div class="login-box"> 
+			<h1>Calculator</h1> 
+      <div class="textbox">  
+				<input type="number" placeholder="First Number"
+						name="firstn" > 
+			</div> 
+			<div class="textbox"> 
+				<input type="number" placeholder="Second Number"
+						name="secn"> 
+			</div> 
+			<div class="textbox">  
+				<input type="text" placeholder="operator"
+						name="opr" > 
+			</div> 
+			
+			<input type="submit"
+					name="login" class="button"> 
+		</div> 
+	</form> 
+</body> 
+
+</html> 

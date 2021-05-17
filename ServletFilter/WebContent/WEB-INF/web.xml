@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>ServletFilter</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>url</servlet-name>
+		<servlet-class>com.grwt.servlt.filter.zafar.FilterClass</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>url</servlet-name>
+		<url-pattern>/insertPageForm/filter</url-pattern>
+	</servlet-mapping>
+	<context-param>
+		<param-name>dbname</param-name>
+		<param-value>greattug_gw_pratice_CD</param-value>
+	</context-param>
+	<context-param>
+		<param-name>userName</param-name>
+		<param-value>greattug_pratice</param-value>
+	</context-param>
+	<context-param>
+		<param-name>password</param-name>
+		<param-value>Test1234##</param-value>
+	</context-param>
+	<context-param>
+		<param-name>port</param-name>
+		<param-value>3306</param-value>
+	</context-param>
+	<context-param>
+		<param-name>ip</param-name>
+		<param-value>103.50.160.116</param-value>
+	</context-param>
+	<context-param>
+		<param-name>jdbcd</param-name>
+		<param-value>com.mysql.cj.jdbc.Driver</param-value>
+	</context-param>
+	<filter>
+		<filter-name>filter</filter-name>
+		<filter-class>com.grwt.servlt.filter.zafar.FilterDb</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>filter</filter-name>
+		<url-pattern>/insertPageForm/filter</url-pattern>
+	</filter-mapping>
+</web-app>
